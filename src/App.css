@@ -1,0 +1,352 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.navbar-collapse {
+  flex-grow: inherit;
+}
+
+/**********************
+/***** Services *******
+/*********************/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section{
+    padding: 60px 0;
+}
+section .section-title{
+	text-align:center;
+	color:#0062cc;
+	margin-bottom:50px;
+	text-transform:uppercase;
+}
+#what-we-do{
+	background:#ffffff;
+}
+#what-we-do .card{
+	padding: 1rem!important;
+	border: none;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card:hover{
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+#what-we-do .card .card-block{
+	padding-left: 50px;
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: #0062cc !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #0062cc;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+#what-we-do .card .block-1:before{
+    content: "\f0e7";
+}
+#what-we-do .card .block-2:before{
+    content: "\f0eb";
+}
+#what-we-do .card .block-3:before{
+    content: "\f00c";
+}
+#what-we-do .card .block-4:before{
+    content: "\f209";
+}
+#what-we-do .card .block-5:before{
+    content: "\f0a1";
+}
+#what-we-do .card .block-6:before{
+    content: "\f218";
+}
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+#what-we-do .card {
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+}
+
+
+.nav-item a {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+/* home page css */
+div#root {
+  background: #070a09;
+}
+.topbanner h2 {
+  text-align: left;
+  color: #fff;
+  font-size: 35px;
+}
+.topbanner p {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+.row.topbanner {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+button.btn.btn-default {
+  background: #044e54;
+  color: #fff;
+  text-align: left !important;
+  float: left;
+}
+button.btn.btn-default {
+  background: #044e54;
+  color: #fff;
+  float: left;
+  margin-right: 15px;
+  width: 25%;
+  text-align: center !important;
+}
+.navbar {
+  padding: .5rem 6rem !important;
+}
+
+.nav-item a {
+
+  color: #fff;
+}
+.rightimg img {
+  filter: inherit;
+  opacity: 0.9;
+  height: 300px;
+}
+button.btn.menu {
+  background: #044e54;
+  color: #fff;
+}
+.gallery {
+  text-align: left;
+}
+.gallery1 {
+  margin: 10px 0px;
+}
+img.img1 {
+  margin-top: -51px;
+  margin-right: 10px;
+}
+.gallery img {
+  border-radius: 5px;
+  width: 250px;
+}
+.row.topbanner.gall {
+  margin-top: 13%;
+}
+i.fa.fa-dot-circle-o {
+  color: #044e54;
+  font-size: 35px;
+}
+
+img.scor1 {
+  width: 355px;
+  border-radius: 10px;
+  height: 294px;
+}
+.box-1 {
+  
+  background: #044e54;
+  padding: 71px 66px 17px 269px;
+  margin: 1px 147px;
+  margin-top: -150px;
+  border-radius: 5px;
+
+}
+
+
+.score h2 {
+  text-align: center;
+}
+i.fa.fa-arrow-right {
+  background: #366569;
+  padding: 6px;
+  font-size: 19px;
+  margin-right: 10px;
+}
+.footer p {
+  color: #fff;
+}
+.footer h2 {
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+}
+footer.footer {
+  padding: 5%;
+  border-top: 1px solid;
+
+}
+.footer ul {
+  text-align: left;
+  color: #fff;
+  list-style: none;
+  padding-left: 0; 
+}
+.footer4 li {
+  margin-right: 10px;
+}
+.footer4 ul {
+  display: flex;
+}
+.footer1 a.navbar-brand {
+  margin-left: -33px;
+}
+
+.box > .icon { text-align: center; position: relative; }
+.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #044e54; vertical-align: middle; }
+.box > .icon:hover > .image { background: #333; }
+.box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+.box > .icon:hover > .image > i { color: white !important; }
+.box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 40px 0 10px 0; }
+.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+.box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 16px; color: #fff; font-weight: 500; }
+.box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+.box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #044e54; }
+.box .space { height: 30px; }
